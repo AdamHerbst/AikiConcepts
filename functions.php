@@ -32,7 +32,6 @@ function load_css()
 
 add_action('wp_enqueue_scripts','load_css');
 
-
 //Load javascript
 function load_js()
 {
