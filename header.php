@@ -17,28 +17,21 @@
 <!-- This is the header of the site to be referenced by other areas of code -->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Document</title>
-	<!-- inserts the default wordpress header or whatever it is set to -->
-	<?php wp_head();?>
-	
-</head>
-<body>
-
-<header>
-	
-		<div class="container">
-		<?php
-		// Declares menus if present
-		wp_nav_menu(	
-			array(
-				'theme_location' => 'top-menu',
-				
-				'menu_class' => 'top-bar'
-			)
-		);
-		?>
-		</div>
-	
-</header>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Document</title>
+        <!-- inserts the default wordpress header or whatever it is set to -->
+        <?php wp_head(); ?>
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <?php // Declares menus if present
+					wp_nav_menu([
+						'theme_location' =>
+						'top-menu', 'menu_class' => 'top-bar', ]); 
+				?>
+            </div>
+        </header>
+    </body>
+</html>
