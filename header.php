@@ -1,3 +1,4 @@
+  
 <!--/**************************************************************************
 * Copyright 2020 Adam Herbst*
 * *
@@ -14,24 +15,30 @@
 * limitations under the License. *
 **************************************************************************/ -->
 
-<!-- This is the header of the site to be referenced by other areas of code -->
+<!-- Creates the header for the website and places menu's there  -->
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <title>Document</title>
-        <!-- inserts the default wordpress header or whatever it is set to -->
-        <?php wp_head(); ?>
-    </head>
-    <body>
-        <header>
-            <div class="container">
-                <?php // Declares menus if present
-					wp_nav_menu([
-						'theme_location' =>
-						'top-menu', 'menu_class' => 'top-bar', ]); 
-				?>
-            </div>
-        </header>
-    </body>
-</html>
+<head>
+	<meta charset="UTF-8">
+	<title>AikiConcepts Aikido Dojo</title>
+
+	<?php wp_head();?>
+    
+</head>
+<body>
+<header>
+	<div class="container">
+		<?php 
+	
+			wp_nav_menu(
+					array(
+
+						'theme_location' => 'top-menu',
+						'menu_class' => 'top-bar'
+					)
+			);
+		?>
+	</div>
+</header>
+
+
