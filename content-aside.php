@@ -14,16 +14,10 @@
 * limitations under the License. *
 **************************************************************************/ -->
 
-<!-- Single Blog post Template -->
-<?php get_header(); ?>
-      <div class="row">
-        <div class="col-sm-8 blog-main">
-          <?php if(have_posts()) : ?>
-            <?php while(have_posts()) : the_post(); ?>
-            <?php get_template_part('content', get_post_format()); ?>
-          <?php endwhile; ?>
-        <?php else : ?>
-          <p><?php __('No Posts Found'); ?></p>
-        <?php endif; ?>
-        </div><!-- blog-main -->
-    <?php get_footer(); ?>
+<!-- Side Bar content for blog posts -->
+<div class="blog-post post-aside">
+  <div class="well">
+    <small><?php the_author(); ?>@<?php the_date(); ?></small>
+    <?php the_content(); ?>
+  </div>
+</div>
