@@ -80,6 +80,15 @@ function wpb_init_widgets($id)
         'before_title' => '<h3>',
         'after_title' => '</h3>'
     ));
+    register_sidebar( array(
+        'name' => 'Footer Sidebar 1',
+        'id' => 'footer-sidebar-1',
+        'description' => 'Appears in the footer area',
+        'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+        'after_widget' => '</aside>',
+        'before_title' => '<h3 class="widget-title">',
+        'after_title' => '</h3>',
+        ) );
 }
 
 add_action('widgets_init', 'wpb_init_widgets');
@@ -105,3 +114,12 @@ function add_google_fonts()
     );
 }
 add_action('wp_enqueue_scripts', 'add_google_fonts');
+
+function max_title_length( $title ) {
+    $max = 20;
+    if( strlen( $title ) > $max ) {
+    return substr( $title, 0, $max ). " &hellip;";
+    } else {
+    return $title;
+    }
+    }

@@ -30,55 +30,13 @@ body {
   padding-top:10px;
 }
 
-h1, .h1,
-h2, .h2,
-h3, .h3,
-h4, .h4,
-h5, .h5,
-h6, .h6 {
-  margin-top: 0;
-  font-weight: normal;
-  color: #333;
-}
-
-/* Navigation styling */
-.blog-nav {
-  background:white;
-  position:sticky;
-  justify-content: center;
-  bottom:0;
-  width:100%;
-  height:100px;
-}
-
-.blog-nav-item {
-  position: relative;
-  display: inline-block;
-  padding: 10px;
-  font-weight: 500;
-  color: black;
-}
-
-.blog-nav-item:hover,
-.blog-nav-item:focus {
-  color: black;
-}
-
-.blog-nav a{
-  color:black;
-  font-size: 25px;
-}
-
-.blog-nav a:hover{
-  color:#666;
-}
-
 /* Active Navigation */
 .blog-nav .active {
   padding-bottom: 20px !important;
   border-bottom: 5px solid #FC2828;
   color:#FC2828 !important;
-}
+  font-size: 25px;
+} 
 
 /* Blog name and description styling*/
 
@@ -106,6 +64,7 @@ h6, .h6 {
 .blog-main {
   font-size: 18px;
   line-height: 1.5;
+  /* width:75%; */
 }
 
 /* Sidebar modules for boxing content */
@@ -274,10 +233,14 @@ h6, .h6 {
 
 /* Extra Menu class styling */
 .extra_menu_class {
+  z-index:12;
 list-style-type:none;
 margin-left:auto;
 margin-right:auto;
 text-align:left;
+font-size: 25px;
+margin-top: 50px;
+background-color:white;
 }
 
 .extra_menu_class li:first-child a {
@@ -295,17 +258,14 @@ text-align:left;
 	top:100%;
 	left:0;
 	background:#fff;
-	box-shadow:1px 1px 10px rgba(0,0,0,0.1);
 	margin:0;
 	padding:0;
 	list-style-type:none;
-	width:200px;
-	border-radius:.5rem;
+	width:400px;
 }
 
 .extra_menu_class li {
   display:inline;
- 
   justify-content: center; 
 }
 
@@ -316,8 +276,7 @@ text-align:left;
 
 .extra_menu_class  li .sub-menu a {
 	color:red;
-	padding:.25rem;
-	text-align:center;
+	text-align:left;
 	display:block;
 	text-decoration:none;
 }
@@ -346,6 +305,7 @@ text-align:left;
 
 .extra_menu_class ul li:hover > ul {
   display: block;
+  background-color:white;
 }
 
 .extra_menu_class ul ul {
@@ -355,12 +315,9 @@ text-align:left;
   left: 0;
   z-index: 99999;
   width: 180px;
-  background: #fff;
+  background: rgb(255, 253, 253);
   text-decoration: underline;
   text-decoration-color: red;
-  border-style: solid;
-  border-color: black;
-  box-shadow: 0px 3px 3px rgba(0,0,0,1);
 }
 
 .extra_menu_class .container {
@@ -393,7 +350,6 @@ position:relative;
   position:relative;
   left:10px;
   top:10px;
-  
 }
 
 #rightBar {
@@ -452,7 +408,7 @@ footer h3 {
 	
 footer h4 {
   color:white;
-	font-size: 20px;
+	font-size: 16px;
 }
 	
 footer {
@@ -460,6 +416,7 @@ footer {
 	color:white !important;
 	width:100%;
 	height:100%;
+  font-weight: bold;
 }
 footer a {
   color:white;
@@ -468,16 +425,20 @@ footer a {
 footer #leftFooter {
   float: left;
   color:white;
-
 }
 
 footer #middleFooter {
   color:white;
   text-align: center;
- 
 }
 footer #rightFooter {
   float: right;
+}
+
+ul {
+  list-style-type: disc !important;
+  padding-left:1em !important;
+  margin-left:1em;
 }
 
 /* Media Queries */
@@ -503,5 +464,77 @@ footer #rightFooter {
     display:none;
     top:100px;
   }
+}
+
+@media only screen and (max-width: 1290px) {
+  .extra_menu_class {
+    z-index:12;
+  list-style-type:none;
+  margin-left:auto;
+  margin-right:auto;
+  text-align:left;
+  left: 130px;
+  font-size: 18px;
+  margin-top: 50px;
+  background-color:white;
+  }
+}
+
+@media only screen and (max-width: 1165px) {
+  .extra_menu_class {
+    z-index:12;
+  list-style-type:none;
+  margin-left:auto;
+  margin-right:auto;
+  text-align:left;
+  left: 100px;
+  font-size: 15px;
+  margin-top: 50px;
+  background-color:white;
+  }
+}
+
+@media only screen and (max-width: 1060px) {
+  .extra_menu_class {
+    z-index:12;
+  list-style-type:none;
+  margin-left:auto;
+  margin-right:auto;
+  text-align:left;
+  left: 175px;
+  font-size: 18px;
+  margin-top: 50px;
+  background-color:white;
+  }
+
+  #rightBar {
+    display:none;
+  }
+
+}
+
+footer ul li{
+  padding:5px 0px;
+}
+
+.adress span , .contact span , .social span{
+ color: #FFF; 
+ font-weight: 800; 
+ padding-bottom: 10px; 
+ margin-bottom: 20px;
+ display: block;
+ text-transform: uppercase;
+ font-size: 20px;
+ letter-spacing: 3px;
+}
+
+.adress li p , .contact li a , .social li a{
+  color:#FFF;
+  letter-spacing: 2px;
+  text-decoration:none;
+  font-size:15px;
+}
+.social {
+  margin-right: -20px;
 }
 

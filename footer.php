@@ -15,55 +15,80 @@
 **************************************************************************/ -->
 
 <!-- Creates the design and content for the footer (bottom) of the site -->
-<?php if (!is_front_page()): ?>
+<?php
+if (!is_front_page()):
+?>
+<?php
+add_filter( 'the_title', 'max_title_length');
+?>
   <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
-    <?php if (is_active_sidebar('sidebar')): ?>
-      <?php dynamic_sidebar('sidebar'); ?>
-    <?php endif; ?>
+    <?php
+    if (is_active_sidebar('sidebar')):
+?>
+      <?php
+        dynamic_sidebar('sidebar');
+?>
+    <?php
+    endif;
+?>
   </div><!-- Blog-sidebar -->
-<?php endif; ?>
+<?php
+endif;
+?>
   </div><!-- row -->
   </div><!-- container -->
   <footer>
-    <div class="container-fluid" id="footerCustom">
-        <!-- Creates 3 rows for content to be implemented -->
-        <div class="row">
-            <div class="col-sm-4" id="leftFooter">
-                <!-- Hard Coded Theme Content-->
-                <!-- Left content -->
-                <h2> <b>Class Times </b></h2>
-                <h4>
-                    Adult Aikido (On Hold): <br>
+ <div class="container">
+   <div class="row">
+   
+            <div class="col-lg-5 col-md-5 col-sm-4 col-xs-12">
+                <ul class="adress">
+                   <h3>  <b><span>Class Times</span> </b>  </h3> 
+                    <h4>
+                    Adult Aikido (<b>On Hold</b>): <br>
                     Tues/Thurs - 6:30-8pm <br>
                     Saturdays - 10-11:30am <br>
                     <p></p>
-                    Jodo (Socially Distanced): Tues/Thurs
+                    Jodo (<b>Socially Distanced)</b>: Tues/Thurs
                 </h4>
+                 </ul>
             </div>
-            <!-- Recent Posts still needs implemented here -->
-            <div class="col-sm-4" class="middleFooter">
-                <h2><b>Recent Posts</b></h2>
-            <p>&copy; <?php echo Date('Y'); ?> - <?php bloginfo('name'); ?></p>
-  <p>
-    <a href="#">Back to top</a>
-  </p>
-    </div>
-            <div class="col-sm-4" class="rightFooter">
-                <!-- Right Column location information -->
-                <h2><b>Location</b></h2>
-                <h4>As of November, 2018, we are offering
+            
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                <ul class="contact">
+                                <div id="footer-sidebar" class="secondary">
+            <div id="footer-sidebar1">
+            <?php
+              if (is_active_sidebar('footer-sidebar-1')) {
+              dynamic_sidebar('footer-sidebar-1');
+              }
+              ?>
+              </div>
+                </ul>
+            </div>
+       
+            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+               <ul class="social">
+                         <h3> <b> <span>Location</span> </b>  </h3>
+                           <h4>As of November, 2018, we are offering
                     classes at the All Souls Unitarian Church,
                     5805 E. 56th Street, Indianapolis, between
                     Emerson and Arlington. 
                 </h4>
+                          
+                 </ul>
             </div>
-        </div>
-    </div>
-    </div>
+       
+       
+       </div> 
     </div>
 </footer>
-<?php wp_footer(); ?>
+<?php
+wp_footer();
+?>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="<?php bloginfo('template_url'); ?>/js/bootstrap.js"></script>
+<script src="<?php
+bloginfo('template_url');
+?>/js/bootstrap.js"></script>
 </body>
 </html>

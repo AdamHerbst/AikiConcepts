@@ -17,15 +17,18 @@
 <!-- Front page template for a different front page to be implemented -->
 
 <?php get_header(); ?>
+<?php
+add_filter( 'the_title', 'max_title_length');
+?>
       <div class="row">
-        <div class="col-sm-12 blog-main">
+        <div class="col-sm-12 blog-main" >
           <?php if (have_posts()): ?>
             <?php while (have_posts()):
                 the_post(); ?>
           <div class="blog-post">
-            <h2 class="blog-post-title">
+            <!-- <h2 class="blog-post-title">
                 <?php the_title(); ?>
-            </h2>
+            </h2> -->
             <?php the_content(); ?>
           </div><!-- blog-post -->
           <?php
