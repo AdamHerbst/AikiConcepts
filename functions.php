@@ -122,4 +122,4 @@ function max_title_length( $title ) {
     } else {
     return $title;
     }
-    }
+ }
