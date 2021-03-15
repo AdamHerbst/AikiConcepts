@@ -1,0 +1,52 @@
+* {
+    background-color: #45a5e7;
+    color: white;
+}
+
+body {
+    background-color:transparent !important;
+    color: white !important;
+}
+
+
+.container img {
+    margin-top:0px;
+    border: white;
+}
+
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+  .label {
+      text-align: center !important;
+      color:white;
+      font-size: 40px;
+  }
+
+  .label a:link, a:visited {
+      color:white;
+      font-size:40px;
+  }
+.btn {
+    background-color:#457de7;
+  color:white;
+  font-size:40px;
+  height:100px;
+  margin:auto;
+    text-align:center;
+    vertical-align: middle;
+    line-height: 65px;
+
+}
+
+a:hover {
+    background:#00abff !important;
+}
+
+.h3 {
+    margin-top:20px;
+}
