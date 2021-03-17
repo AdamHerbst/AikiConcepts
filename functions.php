@@ -15,6 +15,9 @@
 **************************************************************************/ -->
 
 <?php
+//Constant for size of exerpt length
+define("exerptLength", 45);
+define("titleLength", 20);
 // Register Nav Walker class_alias
 require_once 'wp_bootstrap_navwalker.php';
 
@@ -37,7 +40,7 @@ add_action('after_setup_theme', 'wpb_theme_setup');
 // Excerpt Length Control
 function set_excerpt_length()
 {
-    return 45;
+    return exerptLength;
 }
 
 add_filter('excerpt_length', 'set_excerpt_length');
@@ -117,9 +120,9 @@ add_action('wp_enqueue_scripts', 'add_google_fonts');
 
 function max_title_length( $title ) {
     $max = 20;
-    if( strlen( $title ) > $max ) {
-    return substr( $title, 0, $max ). " &hellip;";
-    } else {
-    return $title;
+        if( strlen( $title ) > $max ) {
+        return substr( $title, 0, $max ). " &hellip;";
+        } else {
+        return $title;
     }
-   }
+}
