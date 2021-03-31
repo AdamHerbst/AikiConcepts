@@ -58,13 +58,13 @@
                 </nav>
                 </div>
                 <div id="rightBar">
-                    <p></p>
+                    <!-- <p></p> -->
                     <img src="https://adamherbst.com/images/noun_Home_3128906.png" alt="AikiConcepts Address"  width="26" height="24"> </a>
                     5805 E. 56th Street - Indianapolis, IN
-                    <p></p>
+                    <!-- <p></p> -->
                     <img src="https://adamherbst.com/images/noun_Email_3538329.png" alt="AikiConcepts Email"  width="26" height="24"> </a>
                     Aikido@AikiConcepts.org
-                    <p></p>
+                    <!-- <p></p> -->
                     <img src="https://adamherbst.com/images/noun_Phone_2510186.png" alt="AikiConcepts Email"  width="26" height="24"> </a>
                     (317) 762-8390
                 </div>
