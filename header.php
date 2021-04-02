@@ -41,9 +41,16 @@
         <!-- The rest of the code stylizes and creates the header (top) part of the website. This is globally available -->
         <header>
             <div class="container-fluid" id="leftBar">
-                <img src="https://i.ibb.co/h7fNjkk/aiki-Concepts-Logo.jpg" alt="aiki-Concepts-Logo"  width="250" height="125"></a>
+                <figure>
+                <a href="https://www.aikiconcepts.org"> <img src="https://i.ibb.co/h7fNjkk/aiki-Concepts-Logo.jpg" alt="aiki-Concepts-Logo"  width="250" height="125"></a>
+                <figcaption><b>Est. 1987</b> <br> </figcaption>
+                <br>
+               <figcaption id="yosh"> Yoshinkan Aikido Dojo </figcaption>
+            
+               
+        </figure>
                 <nav class="blog-nav navbar-fixed-top navbar-expand">
-                    <div class="container">
+                    <div class="container" id=footerCont>
                         <!-- Wordpress navigation menu implemented -->
                         <?php wp_nav_menu(
                             array(
@@ -59,14 +66,16 @@
                 </div>
                 <div id="rightBar">
                     <!-- <p></p> -->
-                    <img src="https://adamherbst.com/images/noun_Home_3128906.png" alt="AikiConcepts Address"  width="26" height="24"> </a>
+                    <br>
+                    <img src="https://adamherbst.com/images/noun_Home_3128906.png" alt="AikiConcepts Address"  width="35" height="35"> </a>
                     5805 E. 56th Street - Indianapolis, IN
-                    <!-- <p></p> -->
-                    <img src="https://adamherbst.com/images/noun_Email_3538329.png" alt="AikiConcepts Email"  width="26" height="24"> </a>
+                    <!-- <p></p> --> <br>
+                    <img src="https://adamherbst.com/images/noun_Email_3538329.png" alt="AikiConcepts Email"  width="35" height="35"> </a>
                     Aikido@AikiConcepts.org
-                    <!-- <p></p> -->
-                    <img src="https://adamherbst.com/images/noun_Phone_2510186.png" alt="AikiConcepts Email"  width="26" height="24"> </a>
+                    <!-- <p></p> --><br>
+                    <img src="https://adamherbst.com/images/noun_Phone_2510186.png" alt="AikiConcepts Phone Number"  width="35" height="35"> </a>
                     (317) 762-8390
+                    <a href="https://www.facebook.com/AikiConcepts-Inc-160612216123"> <img src="https://images.adamherbst.com/facebook_Icon_Red.png" alt="Facebook Logo"  style="margin-left:50px;" width="60" height="60"></a>
                 </div>
             </div>
         </header>

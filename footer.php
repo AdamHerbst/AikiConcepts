@@ -73,7 +73,7 @@ endif;
                            <h4>As of November, 2018, we are offering
                     classes at the All Souls Unitarian Church,
                     5805 E. 56th Street, Indianapolis, between
-                    Emerson and Arlington. 
+                    Emerson and Arlington. <a href="https://www.adamherbst.com/aikiconcepts/find-us/" style="font-size:20px;text-decoration:underline;" ><b>Directions</b></a> 
                 </h4>
                           
                  </ul>
