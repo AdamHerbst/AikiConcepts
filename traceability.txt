@@ -1,0 +1,1 @@
+For Dr. Hoffert: For User Story #9.0 My user stories all utilized adding the content, pages and the "contact us" form, by changing it within wordpress. I cannot add traceability via github for that.
