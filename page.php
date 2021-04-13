@@ -29,7 +29,7 @@
                         </div><!-- blog-post -->
                   <?php endwhile; ?>
                   <?php else: ?>
-      <p><?php __('No Page Found'); ?></p>
+                        <p><?php __('No Page Found'); ?></p>
                   <?php endif; ?>
             </div><!-- blog-main -->
       </div> <!-- row -->
