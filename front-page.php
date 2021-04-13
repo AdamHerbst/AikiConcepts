@@ -17,21 +17,23 @@
 <!-- Front page template for a different front page to be implemented -->
 
 <?php get_header(); ?>
-<?php
-add_filter( 'the_title', 'max_title_length');
-?>
+      <?php
+            add_filter('the_title', 'max_title_length');
+      ?>
       <div class="row">
-        <div class="col-sm-12 blog-main" >
-          <?php if (have_posts()): ?>
-            <?php while (have_posts()):
-                the_post(); ?>
-          <div class="blog-post">
-            <?php the_content(); ?>
-          </div><!-- blog-post -->
-          <?php
-            endwhile; ?>
-        <?php else: ?>
-          <p><?php __('No Page Found'); ?></p>
-        <?php endif; ?>
-        </div><!-- blog-main -->
-    <?php get_footer(); ?>
+            <div class="col-sm-12 blog-main" >
+            <?php if (have_posts()): ?>
+                  <?php while (have_posts()):
+                        the_post(); ?>
+                        <div class="blog-post">
+                              <?php the_content(); ?>
+                        </div><!-- blog-post -->
+                  <?php
+                        endwhile; ?>
+                   <?php
+                        else: ?>
+             <p><?php __('No Page Found'); ?></p>
+                  <?php
+                        endif; ?>
+      </div><!-- blog-main -->
+<?php get_footer(); ?>
