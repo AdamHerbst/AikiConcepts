@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html <?php language_attributes(); ?>>
 <!--/**************************************************************************
 * Copyright 2020 Adam Herbst*
 * *
@@ -15,12 +17,9 @@
 **************************************************************************/ -->
 
 <!-- Header template. Also loads all needed bootstrap and javascript files -->
-<!DOCTYPE html>
-<html <?php language_attributes(); ?>>
     <head>
         <!-- The next code helps with browser compatability -->
         <meta charset="<?php bloginfo('charset'); ?>">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
         <meta name="description" content="<?php bloginfo('description'); ?>">
@@ -42,13 +41,10 @@
         <header>
             <div class="container-fluid" id="leftBar">
                 <figure>
-                <a href="https://www.aikiconcepts.org"> <img src="https://i.ibb.co/h7fNjkk/aiki-Concepts-Logo.jpg" alt="aiki-Concepts-Logo"  width="250" height="125"></a>
-                <figcaption><b>Est. 1987</b> <br> </figcaption>
-                <br>
-               <figcaption id="yosh"> Yoshinkan Aikido Dojo </figcaption>
-            
-               
-        </figure>
+                    <a href="https://www.aikiconcepts.org"> <img src="https://i.ibb.co/h7fNjkk/aiki-Concepts-Logo.jpg" alt="aiki-Concepts-Logo"  width="250" height="125"></a>
+                    <figcaption><b>Est. 1987</b>
+                    <br>Yoshinkan Aikido Dojo </figcaption>
+                </figure>
                 <nav class="blog-nav navbar-fixed-top navbar-expand">
                     <div class="container" id=footerCont>
                         <!-- Wordpress navigation menu implemented -->
@@ -62,21 +58,23 @@
                             )
                             );    
                             ?>
-                </nav>
-                </div>
+                    </div>
+                    </nav>
+            </div>
                 <div id="rightBar">
                     <!-- <p></p> -->
                     <br>
-                    <img src="https://adamherbst.com/images/noun_Home_3128906.png" alt="AikiConcepts Address"  width="35" height="35"> </a>
-                    5805 E. 56th Street - Indianapolis, IN
-                    <!-- <p></p> --> <br>
-                    <img src="https://adamherbst.com/images/noun_Email_3538329.png" alt="AikiConcepts Email"  width="35" height="35"> </a>
+                    <!-- <img src="https://adamherbst.com/images/noun_Home_3128906.png" alt="AikiConcepts Address"  width="35" height="35"> </a>
+                    (Inquire about Jodo)
+                    <p></p> -->
+
+                    <img src="https://adamherbst.com/images/noun_Email_3538329.png" alt="AikiConcepts Email"  width="35" height="35"> 
                     Aikido@AikiConcepts.org
                     <!-- <p></p> --><br>
-                    <img src="https://adamherbst.com/images/noun_Phone_2510186.png" alt="AikiConcepts Phone Number"  width="35" height="35"> </a>
+                    <img src="https://adamherbst.com/images/noun_Phone_2510186.png" alt="AikiConcepts Phone Number"  width="35" height="35"> 
                     (317) 762-8390
                     <a href="https://www.facebook.com/AikiConcepts-Inc-160612216123"> <img src="https://images.adamherbst.com/facebook_Icon_Red.png" alt="Facebook Logo"  style="margin-left:50px;" width="60" height="60"></a>
-                </div>
+            
             </div>
         </header>
         <div class="container">
