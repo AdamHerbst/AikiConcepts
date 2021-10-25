@@ -15,7 +15,9 @@ body {
   padding: 0px;
 }
 
-
+div .blog-post {
+  text-align: left;
+}
 /* Active Navigation */
 .blog-nav .active {
   padding-bottom: 20px !important;
@@ -59,6 +61,7 @@ ul.sub-menu > .menu-item-has-children > a::after {
 .blog-main {
   font-size: 18px;
   line-height: 1.5;
+  
   /* width:75%; */
 }
 
@@ -239,7 +242,7 @@ background-color:white;
 
 }
 .extra_menu_class li.has-children > a:after {
-  color: red;
+  color:#FC2828;
   text-decoration: none;
   content: ' ▼';
   font-size: 20px;
@@ -288,7 +291,7 @@ background-color:white;
 }
 
 .extra_menu_class  li .sub-menu a {
-	color:red;
+	color:#FC2828;
 	text-align:left;
 	display:block;
 	text-decoration:none;
@@ -329,7 +332,7 @@ background-color:white;
   width: 180px;
   background: rgb(255, 253, 253);
   text-decoration: underline;
-  text-decoration-color: red;
+  text-decoration-color:#FC2828;
   /* content: "▼";
   padding-left: 3px; */
 }
@@ -417,7 +420,7 @@ footer h2 {
 	
 footer h3 {
   color:white;
-	font-size: 25px;
+	font-size: 16px;
 }
 	
 footer h4 {
@@ -431,6 +434,7 @@ footer {
 	width:100%;
 	height:100%;
   font-weight: bold;
+  padding-top: 20px;
 }
 footer a {
   color:white;
@@ -443,7 +447,7 @@ footer #leftFooter {
 
 footer #middleFooter {
   color:white;
-  text-align: center;
+  /* text-align: center; */
 }
 footer #rightFooter {
   float: center;
@@ -527,8 +531,6 @@ ul {
 
 }
 
-
-
 footer ul li{
   padding:5px 0px;
 }
@@ -538,15 +540,14 @@ footer ul li{
  font-weight: 800; 
  padding-bottom: 10px; 
  margin-bottom: 20px;
- display: block;
+ display: inline;
  text-transform: uppercase;
  font-size: 20px;
- letter-spacing: 3px;
 }
 
 .adress li p , .contact li a , .social li a{
   color:#FFF;
-  letter-spacing: 2px;
+  letter-spacing: normal;
   text-decoration:none;
   font-size:15px;
 }
@@ -598,15 +599,16 @@ figcaption{
       float:left;
       width:31%;
       margin:1% 1% 45px 1%;
+
   }
   .name {
-
+    border-radius: 15px;
     display: flex;
     justify-content: center;
       position:absolute;
       bottom:.8em;
-      font-size: 1em;
-      background-color: red;
+      font-size: 1.2em;
+      background-color: #FC2828;
       color: white;
       text-align: left;
       padding: 4%;
@@ -624,17 +626,19 @@ figcaption{
   }
   .alert {
     padding: 20px;
-    background-color: #f44336;
+    background-color: #FC2828;
     color: white;
     text-align: center;
+    font-size: 1.2em;
+    border-radius: 15px;
   }
   
   .closebtn {
     margin-left: 15px;
-    color: white;
+    color: black;
     font-weight: bold;
     float: right;
-    font-size: 22px;
+    font-size: 32px;
     line-height: 20px;
     cursor: pointer;
     transition: 0.3s;
@@ -647,3 +651,10 @@ figcaption{
   img{
     max-width:100%;height:auto;
   }
+
+  a.anchor {
+    display: block;
+    position: relative;
+    top: -190px;
+    visibility: hidden;
+}

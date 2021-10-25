@@ -25,44 +25,44 @@ endif;
    <div class="row">
    
             <div class="col-lg-5 col-md-5 col-sm-4 col-xs-12">
-                <ul class="adress">
-                   <li> <u><span>Class Times</span></u> 
+                <!-- <ul class="adress"> -->
+                   <div class="adress" style="border-bottom: 4px solid #FFF; padding-bottom: 2px; font-weight:bold; font-size: 22px;">Class Times</div>
                 
-                    Adult Aikido (<b>On Hold</b>): <br>
+                 <h4 style="font-weight: normal;">   Adult Aikido (On Hold): <br>
                     Tues/Thurs - 6:30-8pm <br>
                     Saturdays - 10-11:30am <br>
-                    <p></p>
+                    <br>
                     Jodo (<b>Socially Distanced)</b>: Tues/Thurs
-                    </li>
-                 </ul>
+                    
+</h4>
             </div>
             
             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                <ul class="contact">
-               <li><u><span>Recent Posts</span></u>
-                                <div id="footer-sidebar" class="secondary">
-            <div id="footer-sidebar1">
+                <!-- <ul class="contact"> -->
+               <div class="contact" style="border-bottom: 4px solid #FFF; padding-bottom: 2px; font-weight: bold; font-size: 22px;">Our Blog</div>
+
+               <!-- <h4 style="font-weight: normal; padding-top: 0px;">  -->
+                                <!-- <div id="footer-sidebar" class="secondary"> -->
+            <!-- <div id="footer-sidebar1"> -->
             <?php
               if (is_active_sidebar('footer-sidebar-1')) {
               dynamic_sidebar('footer-sidebar-1');
               }
               ?>
-              </div>
-              
-            </li>
-                </ul>
+              <!-- </div> -->
+        
             </div>
        
             <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
-               <ul class="social">
-                    <li><span>Contact Information</span>
+               <!-- <ul class="social"> -->
+                    <div class="social" style="border-bottom: 4px solid #FFF; padding-bottom: 2px; font-weight: bold; font-size: 22px;">Contact Information</div>
+                    <h4 style="font-weight: normal;">
                            We are inbetween locations currently. 
                     Please Inquire about Jodo.
                     <b><u><a href = "mailto:aikido@aikiconcepts.org">Aikido@AikiConcepts.org</a></u></b>
-                   <b> Phone number: (317) 762-8390 </b>
+                   Phone number: <b>(317) 762-8390</b> 
                   <!-- <a href="https://www.adamherbst.com/aikiconcepts/find-us/" style="font-size:20px;text-decoration:underline;" ><b>Directions</b></a>  -->   
-                  </li>      
-              </ul>
+            </h4>
             </div>
        </div> 
     </div>

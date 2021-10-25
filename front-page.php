@@ -22,18 +22,18 @@ add_filter( 'the_title', 'max_title_length');
         </div><!-- blog-main -->
 
         <div class="text-center">
-          <a href="/programs/" class="btn" id="learnMore">Learn More About Aikido</a>
+          <a href="/aikiconcepts/about-us/#learnMoreAbout" class="btn" id="learnMore">Learn More About Aikido</a>
         </div>
         <div id="design-cast">
 
     <div class="member">
       
         <img src="https://images.adamherbst.com/apply3rd.jpg" class="img-responsive img-thumbnail" alt="Responsive image" />
-        <a href="/programs">  <div class="name">Aikido</div> </a>
+        <a href="/aikiconcepts//about-us/#moreAikido">  <div class="name">Aikido</div> </a>
     </div>
     <div class="member">
         <img src="https://images.adamherbst.com/jodoMain.jpg" class="img-responsive img-thumbnail" alt="Responsive image" />
-        <a href="/programs/">  <div class="name">Seitei Jodo</div> </a>
+        <a href="/aikiconcepts//about-us/#moreJodo">  <div class="name">Seitei Jodo</div> </a>
     </div>
 </div>
     <?php get_footer(); ?>
