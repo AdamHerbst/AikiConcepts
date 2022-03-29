@@ -28,11 +28,11 @@ add_filter( 'the_title', 'max_title_length');
 
     <div class="member">
       
-        <img src="https://images.adamherbst.com/apply3rd.jpg" class="img-responsive img-thumbnail" alt="Responsive image" />
+        <img src="https://adamherbst.com/images/apply3rd.jpg" class="img-responsive img-thumbnail" alt="Responsive image" />
         <a href="/aikiconcepts//about-us/#moreAikido">  <div class="name">Aikido</div> </a>
     </div>
     <div class="member">
-        <img src="https://images.adamherbst.com/jodoMain.jpg" class="img-responsive img-thumbnail" alt="Responsive image" />
+        <img src="https://adamherbst.com/images/jodoMain.jpg" class="img-responsive img-thumbnail" alt="Responsive image" />
         <a href="/aikiconcepts//about-us/#moreJodo">  <div class="name">Seitei Jodo</div> </a>
     </div>
 </div>

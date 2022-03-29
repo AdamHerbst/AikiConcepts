@@ -34,6 +34,8 @@
         <!-- Custom styles for this template -->
         <link href="<?php bloginfo('stylesheet_url'); ?>" rel="stylesheet">
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+
+        
         <?php wp_head(); ?>
     </head>
     <body>
@@ -73,7 +75,7 @@
                     <!-- <p></p> --><br>
                     <img src="https://adamherbst.com/images/noun_Phone_2510186.png" alt="AikiConcepts Phone Number"  width="35" height="35"> 
                     (317) 762-8390
-                    <a href="https://www.facebook.com/AikiConcepts-Inc-160612216123"> <img src="https://images.adamherbst.com/facebook_Icon_Red.png" alt="Facebook Logo"  style="margin-left:50px;" width="60" height="60"></a>
+                    <a href="https://www.facebook.com/AikiConcepts-Inc-160612216123"> <img src="https://adamherbst.com/images/facebook_Icon_Red.png" alt="Facebook Logo"  style="margin-left:50px;" width="60" height="60"></a>
             
             </div>
         </header>
